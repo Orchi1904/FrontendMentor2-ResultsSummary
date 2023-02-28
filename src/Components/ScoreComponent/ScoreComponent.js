@@ -1,5 +1,4 @@
 import React from 'react';
-import Icon from './Icon';
 import './ScoreComponent.css';
 
 function ScoreComponent({ icon, category, score, maxScore }) {
