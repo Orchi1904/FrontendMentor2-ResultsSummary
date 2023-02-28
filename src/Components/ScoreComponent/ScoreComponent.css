@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "HakenGrotesk";
+    src: url("../../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  }
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --light-red-background: hsla(0, 100%, 67%, 0.1);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --orangey-yellow-background: hsla(39, 100%, 56%, 0.1);
+    --green-teal: hsl(166, 100%, 37%);
+    --green-teal-background: hsla(166, 100%, 37%, 0.1);
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --cobalt-blue-background: hsla(234, 85%, 45%, 0.1);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.scoreComponent {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.scoreComponentLeft {
+    display: flex;
+    gap: 15px;
+}
+
+.scoreComponentLeft > p{
+    font-family: "HakenGrotesk", sans-serif;
+    font-weight: 500;
+}
+
+.scoreComponentRightFirst{
+    color: var(--dark-gray-blue);
+    font-weight: 700;
+}
+
+.scoreComponentRightSecond{
+    color: darkgray;
+    font-weight: 700;
+}
+
+.Reaction{
+    color: var(--light-red);
+    background-color: var(--light-red-background);
+}
+
+.Memory{
+    color: var(--orangey-yellow);
+    background-color: var(--orangey-yellow-background);
+}
+
+.Verbal{
+    color: var(--green-teal);
+    background-color: var(--green-teal-background);
+}
+
+.Visual{
+    color: var(--cobalt-blue);
+    background-color: var(--cobalt-blue-background);
+}

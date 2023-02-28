@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "HakenGrotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+:root {
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --light-lavender-shadow: hsla(241, 100%, 89%, 0.5);
+}
+
+.resultContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding: 20px 25%;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+.resultContainer > h4 {
+  font-family: "HakenGrotesk", sans-serif;
+  font-weight: 700;
+  color: var(--light-lavender);
+}
+
+.resultContainerCircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  border-radius: 100%;
+  background: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+.resultContainerCircleScore {
+  font-family: "HakenGrotesk", sans-serif;
+  font-weight: 800;
+  color: var(--white);
+  font-size: 50px;
+}
+
+.resultContainerCircleMaxScore {
+  color: var(--light-lavender);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.resultContainerDescription > h3 {
+  font-family: "HakenGrotesk", sans-serif;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.resultContainerDescription > p{
+  font-family: "HakenGrotesk", sans-serif;
+  color: var(--light-lavender);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summaryContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 5%;
+}
+
+.summaryContainer > h4{
+  color: var(--dark-gray-blue);
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.summaryContainer > button{
+  width: 100%;
+  font-family: "HakenGrotesk", sans-serif;
+  margin-top: 5px;
+  border: none;
+  color: var(--white);
+  background-color: var(--dark-gray-blue);
+  border-radius: 40px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.summaryContainer > button:hover{
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+@media screen and (min-width: 720px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  main{
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 2px 5px 20px var(--light-lavender-shadow);
+    width: 720px;
+  }
+
+  .resultContainer{
+    box-sizing: border-box;
+    padding: 0px;
+    border-radius: 30px;
+    flex: 50%;
+    padding: 40px 80px;
+    justify-content: space-between;
+  }
+
+  .resultContainerCircle{
+    width: 150px;
+    height: 150px;
+  }
+
+  .summaryContainer{
+    box-sizing: border-box;
+    flex: 50%;
+  }
+}
