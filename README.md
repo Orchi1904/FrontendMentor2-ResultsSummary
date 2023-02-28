@@ -63,6 +63,8 @@ This challenge was very helpful for me to review how to display data in React fr
 ```
 I could not figure out how to do this in a nice way, so I just created my own Icon component which ultimately allowed the icons to appear as intended. 
 
+**UPDATE:** [@visualdennis](https://www.frontendmentor.io/profile/visualdenniss) on Frontend Mentor helped me with the JSON icon problem. I had to move all the icon-svg´s into the public folder, which I tried once before. Of course you have to change the icon path in the JSON file after that, which I did before too, but I did not know that ../ already refered to the public folder, so I tried to have a path like "../public/assets/images/icon-verbal.svg" instead of the right path "../assets/images/icon-verbal.svg". Such a small mistake can cost you a lot of time sadly. 
+
 Also somehow my solution on Frontend Mentor is not centered in the design comparison, even though it is centered on my live website. I guess this is an issue on Frontend Mentor`s platform, as I could not find a solution that is centered in the design comparison. 
 
 ## Author
