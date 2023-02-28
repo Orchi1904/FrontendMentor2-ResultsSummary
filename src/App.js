@@ -15,7 +15,7 @@ function App() {
   //Logic to calculate average score
   useEffect(() => {
     let finalScore = 0;
-    for(let score of scoreArr){
+    for (let score of scoreArr) {
       finalScore += parseInt(score);
     }
     finalScore /= scoreArr.length;

@@ -6,7 +6,7 @@ function ScoreComponent({ icon, category, score, maxScore }) {
     return (
         <div className={`scoreComponent ${category}`}>
             <div className="scoreComponentLeft">
-                <Icon category={category} />
+                <img src={icon} alt={category}/>
                 <p>{category}</p>
             </div>
             <div className="scoreComponentRight">
